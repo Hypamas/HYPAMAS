@@ -13,6 +13,8 @@ In the iterative method, HYPAMAS uses incomplete LU(ILU) factorization as the ri
 >1) sparse left-looking ILU factorization based on threshold dropping(ILUT).
 >2) sparse left-looking ILU factorization based on threshold dropping with partial pivoting(ILUTP).  
   
+GMRES is temporarily only in sequential implementation, and ILU has the parallel feature.
+  
 - 👋 Hi, I’m @Hypamas
 - 👀 I’m interested in high-performance computation, especially in matrix solvers.
 - 🌱 I’m currently learning direct & iterative matrix solvers.
