@@ -15,7 +15,7 @@ In the iterative method, HYPAMAS uses incomplete LU(ILU) factorization as the ri
   
 GMRES is temporarily only in sequential implementation, and ILU has the parallel feature.
   
-- 👋 Hi, I’m @Hypamas
+- 👋 Hi, I’m Penguin.
 - 👀 I’m interested in high-performance computation, especially in matrix solvers.
 - 🌱 I’m currently learning direct & iterative matrix solvers.
 - 💞️ I’m looking to collaborate on a nice team.
