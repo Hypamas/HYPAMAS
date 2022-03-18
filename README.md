@@ -1,4 +1,4 @@
-HYPAMAS: Hybrid Parallel Matrix Solver for linear systems
+HYPAMAS: Hybrid Parallel Matrix Solver for Linear Systems
 =======
 The package HYPAMAS is a thread-safe, high-performance, robust software for solving large sparse unsymmetric linear systems of equations A*X=b using either the direct or the iterative method on shared-memory machines with a multi-core processor. HYPAMAS is implemented in pure C using POSIX threads for parallelization, and hand-code BLAS for efficient numerical calculation.  So it is straightforward to use HYPAMAS without linking other software packages.
 
