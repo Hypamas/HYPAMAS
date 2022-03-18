@@ -33,7 +33,12 @@ OS: linux
 CPU: AVX Instruction Set  
 gcc: 8.4  
 
+References:
+==========
+[1] TBD.
   
+Authors:
+=======
 - 👋 Hi, I’m Penguin.
 - 👀 I’m interested in high-performance computation, especially in matrix solvers.
 - 🌱 I’m currently learning direct & iterative matrix solvers.
