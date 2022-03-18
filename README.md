@@ -27,7 +27,7 @@ Details:
 >2) Forward elimination(L*y=b) and backward substitution(U*x=y) performs much fewer floating-point operations per second(FLOPS) than a numerical LU factorization, it is not guaranteed that parallelization of triangular solves can gain performance improvements. So it is always recommended that triangular solves are sequential.
 >3) HYPAMAS only supports the sparse matrix A stored in a compressed sparse row format[(CSR)](https://en.wikipedia.org/wiki/Sparse_matrix). If the sparse matrix given is stored in a compressed sparse column(CSC), HYPAMAS should solve A<sup>T</sup>*x=b instead of A*x=b. This option is controled in parameter 'iparm'.
 
-Requirement:
+Requirements:
 ===========
 OS: linux  
 CPU: AVX Instruction Set  
