@@ -1,6 +1,6 @@
 /*demo: used to do a benchmark*/
 /*last modified: Mar 18, 2022*/
-/*author: Yu, Guangye*/
+/*author: Penguin*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -36,6 +36,7 @@ int main(int argc, char *argv[])
 
     iparm[kIparmTimer] = 1; // turn on timer
     // iparm[kIparmAutoParallelOff] = 1; // turn off automatic thread control
+    iparm[kIparmSolveTranspose] = 0; // solve A*x=b
 
     // read matrix from matrix market file
     retval = Hypamas_ReadMatrixMarketFile(argv[1], &n, &nnz, &ax, &ap, &ai, 0);
