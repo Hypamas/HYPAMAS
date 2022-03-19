@@ -23,9 +23,9 @@ HYPAMAS has the following improvement features:
 
 Details:
 =======
->1) HYPAMAS can automatically control thread to determine whether using parallel computation. This feature can be turned off in parameter 'iparm' then HYPAMAS will execute the program by threads that the user gives.
+>1) HYPAMAS can automatically control thread to determine whether using parallel computation. This feature can be turned off in parameter iparm[kIparmAutoParallelOff] then HYPAMAS will execute the program by threads that the user gives.
 >2) Forward elimination(L*y=b) and backward substitution(U*x=y) performs much fewer floating-point operations per second(FLOPS) than a numerical LU factorization, it is not guaranteed that parallelization of triangular solves can gain performance improvements. So it is always recommended that triangular solves are sequential.
->3) HYPAMAS only supports the sparse matrix A stored in a compressed sparse row format[(CSR)](https://en.wikipedia.org/wiki/Sparse_matrix). If the sparse matrix given is stored in a compressed sparse column(CSC), HYPAMAS should solve A<sup>T</sup>*x=b instead of A*x=b. This option is controled in parameter 'iparm'.
+>3) HYPAMAS only supports the sparse matrix A stored in a compressed sparse row format[(CSR)](https://en.wikipedia.org/wiki/Sparse_matrix). If the sparse matrix given is stored in a compressed sparse column(CSC), HYPAMAS should solve A<sup>T</sup>*x=b instead of A*x=b. This option is controled in parameter iparm[kIparmSolveTranspose].
 
 Requirements:
 ===========
@@ -35,7 +35,7 @@ gcc: 8.4
 
 References:
 ==========
-[1] TBD.
+[1] J. R. Gilbert and T. Peierls. Sparse partial pivoting in time proportional to arithmetic operations. SIAM J. Scientific and Statistical Computing, 9:862-874, 1988.
   
 Authors:
 =======
