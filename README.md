@@ -35,7 +35,7 @@ gcc: 8.4
 
 References:
 ==========
-[1] J. R. Gilbert and T. Peierls. Sparse partial pivoting in time proportional to arithmetic operations. SIAM J. Scientific and Statistical Computing, 9:862-874, 1988.
+[1] J. R. Gilbert and T. Peierls. Sparse partial pivoting in time proportional to arithmetic operations. SIAM J. Scientific and Statistical Computing, 9:862-874, 1988.  
 [2] S. C. Eisenstat and J. W. H. Liu. Exploiting structural symmetry in a sparse partial pivoting code. SIAM J. Scientific and Statistical Computing, 14:253-257, 1993.
   
 Authors:
