@@ -40,7 +40,7 @@ It is available to download the benchmark test set from the website [SuiteSparse
 Requirements:
 ===========
 OS: linux  
-CPU: AVX Instruction Set  
+CPU: AVX instruction set or higher  
 gcc: 8.4  
 
 References:
