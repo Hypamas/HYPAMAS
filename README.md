@@ -36,7 +36,18 @@ gcc: 8.4
 References:
 ==========
 [1] J. R. Gilbert and T. Peierls. Sparse partial pivoting in time proportional to arithmetic operations. SIAM J. Scientific and Statistical Computing, 9:862-874, 1988.  
-[2] S. C. Eisenstat and J. W. H. Liu. Exploiting structural symmetry in a sparse partial pivoting code. SIAM J. Scientific and Statistical Computing, 14:253-257, 1993.
+[2] S. C. Eisenstat and J. W. H. Liu. Exploiting structural symmetry in a sparse partial pivoting code. SIAM J. Scientific and Statistical Computing, 14:253-257, 1993.  
+[3] Xiaoye S. Li. Sparse gaussian elimination on high performance computers. EECS Department, University of California, Berkeley, 1996.  
+[4] T. A. Davis and E. P. Natarajan. Algorithm 907: KLU, a direct sparse solver for circuit simulation problems. ACM Trans. Mathematical Software. 37(3), 36:1-36:17, 2010.  
+[5] X. Chen, Y. Wang and H. Yang. NICSLU: An adaptive sparse matrix solver for parallel circuit simulation. IEEE Trans. Computer-Aided Design of Integrated Circuits and Systems. 32(2), 261-274, 2013.  
+[6] I. S. Duff and J. Koster. On algorithms for permuting large entries to the diagonal of a sparse matrix. SIAM J. Matrix Analysis and Applications. 22(4), 973-996, 2000.  
+[7] P. R. Amestoy, T. A. Davis and I. S. Duff. Algorithm 837: AMD, an approximate minimum degree ordering algorithm. ACM Trans. Mathematical Software. 30(3), 381-388, 2004.  
+[8] Y. Saad. ILUT: A dual threshold incomplete LU factorization. Numerical Linear Algebra with Applications, 1(4), 387–402, 1994.  
+[9] Xiaoye S. Li and M. Shao. A supernodal approach to incomplete LU factorization with partial pivoting. ACM Trans. Mathematical Software. 37(4), 43:1-43:20, 2011.  
+[10] Y. Saad and M. H. Schultz. GMRES: A generalized minimal residual algorithm for solving nonsymmetric linear systems. SIAM J. Scientific and Statistical Computing, 7(3), 856-869, 1986.  
+[11] Y. Saad. Iterative methods for sparse linear systems. 2nd Edition. SIAM. 2003.  
+
+
   
 Authors:
 =======
