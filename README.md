@@ -37,6 +37,10 @@ From the top-level directory of HYPAMAS, type:
 This series of commands solve the matrix `rajat19.mtx` based on LU factorization with the used number of threads equal to `8`.  
 It is available to download the benchmark test set from the website [SuiteSparse Matrix Collection](https://sparse.tamu.edu/)[<sup>[12]</sup>](#refer_anchor_12).   HYPAMAS is deliberately well-devised to solve the matrix obtained from the `Newton-Raphson` iteration, e.g. Circuit Simulation Problem typically in `SPICE-like` simulators. It is worth mentioning that HYPAMAS only temporarily supports the [Matrix Market](https://math.nist.gov/MatrixMarket/formats.html) exchange format, not the `MATLAB` and the [Rutherford Boeing](https://people.math.sc.edu/Burkardt/data/rb/rb.html) format.
 
+HYPAMAS is benchmarked against KLU on a Linux server equipped with one Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz architecture and 32GB memory.
+![factorization & solution](https://github.com/Hypamas/HYPAMAS/blob/main/Images/factorization%20%26%20solution.png)
+![refactorization & solution](https://github.com/Hypamas/HYPAMAS/blob/main/Images/refactorization%20%26%20solution.png)
+
 Requirements:
 ===========
 OS: linux  
