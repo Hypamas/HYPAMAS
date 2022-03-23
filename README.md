@@ -32,12 +32,14 @@ Benchmark:
 From the top-level directory of HYPAMAS, type:
 >1) cd demo
 >2) make
->3) ./benchmark rajat19.mtx 8  
+>3) ./benchmark rajat19.mtx 6  
 
-This series of commands solve the matrix `rajat19.mtx` based on LU factorization with the used number of threads equal to `8`.  
+This series of commands solve the matrix `rajat19.mtx` based on LU factorization with the used number of threads equal to `6`.  
 It is available to download the benchmark test set from the website [SuiteSparse Matrix Collection](https://sparse.tamu.edu/)[<sup>[12]</sup>](#refer_anchor_12).   HYPAMAS is deliberately well-devised to solve the matrix obtained from the `Newton-Raphson` iteration, e.g. Circuit Simulation Problem typically in `SPICE-like` simulators. It is worth mentioning that HYPAMAS only temporarily supports the [Matrix Market](https://math.nist.gov/MatrixMarket/formats.html) exchange format, not the `MATLAB` and the [Rutherford Boeing](https://people.math.sc.edu/Burkardt/data/rb/rb.html) format.
 
-HYPAMAS is benchmarked against KLU on a Linux server equipped with an Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz architecture and 32GB memory.  
+HYPAMAS is benchmarked against KLU on a Linux system equipped with an Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz architecture, which is specified with 6 physical cores and [Hyper-Threading](https://www.intel.com/content/www/us/en/gaming/resources/hyper-threading.html) yielding 12 logical threads, and 32GB RAM. The test matrices come from the website [SuiteSparse Matrix Collection](https://sparse.tamu.edu/) (formerly the University of Florida Sparse Matrix Collection). HYPAMAS is a cache-friendly application that performs computationally intensive work with fine-tuned floating-point operations, using hyper-threading maybe degrade the performance because of the high usage rate of CPU resources already utilized and the competition for the caches' access running on the logical processors[<sup>[13]</sup>](#refer_anchor_13). Therefore, our benchmarks are only used up to 6 threads instead of 12 threads.
+
+Due to the explicit elimination tree refactorization used, the scalability of parallel refactorization is much better. The following plots show the performance comparison factor against KLU respectively in factorization and refactorization phase, both including solving phase. It should be clarified that GMRES includes ILU preconditioning and iteration duration.  
 ![factorization & solution](https://github.com/Hypamas/HYPAMAS/blob/main/Images/factorization%20%26%20solution.png)
 ![refactorization & solution](https://github.com/Hypamas/HYPAMAS/blob/main/Images/refactorization%20%26%20solution.png)
 
@@ -73,8 +75,9 @@ References:
 [11] Y. Saad. Iterative methods for sparse linear systems. 2nd Edition. SIAM. 2003.  
 <div id = "refer_anchor_12" ></div>
 [12] T. A. Davis and Y. Hu. The University of Florida Sparse Matrix Collection. ACM Trans. Mathematical Software. 38(1) 1:1-1:25, 2011.
-
-
+<div id = "refer_anchor_13" ></div>
+[13] T. L. Tau, A. Rizwan, H. Jenwei, M. Victor and R. Reza. An empirical study of Hyper-Threading in high performance computing clusters. Technical
+report, 2002.
 
   
 Authors:
