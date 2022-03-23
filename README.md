@@ -77,7 +77,7 @@ References:
 [12] T. A. Davis and Y. Hu. The University of Florida Sparse Matrix Collection. ACM Trans. Mathematical Software. 38(1) 1:1-1:25, 2011.
 <div id = "refer_anchor_13" ></div>
 [13] T. L. Tau, A. Rizwan, H. Jenwei, M. Victor and R. Reza. An empirical study of Hyper-Threading in high performance computing clusters. Technical
-report, 2002.
+Report, 2002.
 
   
 Authors:
